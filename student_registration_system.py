@@ -35,7 +35,7 @@ class Student:
         self.std_name = input("Öğrenci Adı : ")
         self.std_surname = input("Öğrenci Soyadı : ")
         self.std_department = input("Öğrenci Bölümü : ")
-        
+             
         cursor.execute(f"INSERT INTO students VALUES ({self.std_no}, {self.std_name}, {self.std_surname}, {self.std_department})")
         database_connect.commit()
         print("Öğrenci başarıyla eklendi!")
